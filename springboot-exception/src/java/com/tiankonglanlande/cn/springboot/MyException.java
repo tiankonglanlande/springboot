@@ -1,4 +1,4 @@
-package com.tiankonglanlande.cn.springboot.exception;
+package com.tiankonglanlande.cn.springboot;
 
 import lombok.Getter;
 import lombok.Setter;

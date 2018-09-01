@@ -1,11 +1,10 @@
 package com.tiankonglanlande.cn.springboot.controller;
 
-import com.tiankonglanlande.cn.springboot.exception.MyException;
+import com.tiankonglanlande.cn.springboot.MyException;
 import com.tiankonglanlande.cn.springboot.result.Result;
 import com.tiankonglanlande.cn.springboot.result.ResultEnum;
 import com.tiankonglanlande.cn.springboot.result.ResultUtils;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

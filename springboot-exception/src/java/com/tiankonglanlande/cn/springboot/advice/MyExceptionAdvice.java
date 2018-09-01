@@ -1,6 +1,6 @@
 package com.tiankonglanlande.cn.springboot.advice;
 
-import com.tiankonglanlande.cn.springboot.exception.MyException;
+import com.tiankonglanlande.cn.springboot.MyException;
 import com.tiankonglanlande.cn.springboot.result.Result;
 import com.tiankonglanlande.cn.springboot.result.ResultEnum;
 import org.springframework.web.bind.annotation.ControllerAdvice;
