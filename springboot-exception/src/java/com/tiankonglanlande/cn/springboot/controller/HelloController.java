@@ -6,8 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-    @RequestMapping("/say/{content}")
-    public String helloword(@PathVariable("content") String content){
+    @RequestMapping("/say/{content}/{age}")
+    public String helloword(@PathVariable("content") String content,@PathVariable("age") Integer age){
         return content;
     }
+
 }
