@@ -1,0 +1,24 @@
+
+spring:
+    datasource:
+       druid:
+          db-type: com.alibaba.druid.pool.DruidDataSource
+          filters: stat
+          max-active: 20
+          initial-size: 1
+          max-wait: 60000
+          min-idle: 1
+          time-between-eviction-runs-millis: 60000
+          min-evictable-idle-time-millis: 300000
+          validation-query: select 'x'
+          test-while-idle: true
+          test-on-borrow: false
+          test-on-return: false
+          pool-prepared-statements: true
+          connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+          use-global-data-source-stat: true
+          driver-class-name: com.mysql.jdbc.Driver
+
+    profiles:
+      active: uat
+
