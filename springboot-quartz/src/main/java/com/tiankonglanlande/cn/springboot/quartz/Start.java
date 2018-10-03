@@ -10,6 +10,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 
+/**
+ * @author 天空蓝蓝的
+ */
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @Configuration
 public class Start {

@@ -3,10 +3,12 @@ package com.tiankonglanlande.cn.springboot.quartz.controller;
 import com.tiankonglanlande.cn.springboot.quartz.manager.QuartzManager;
 import org.quartz.SchedulerException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author 天空蓝蓝的
+ */
 @RestController
 public class ModifyCronController {
 
