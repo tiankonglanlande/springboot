@@ -14,7 +14,7 @@ import java.util.Date;
 public class QuartzManager {
 
     public static final String JOB1="job1";
-    public static final String GROUP1="job1";
+    public static final String GROUP1="group1";
     /**默认每个星期凌晨一点执行*/
     //public static final String DEFAULT_CRON="0 0 1 ? * L";
     /**默认5秒执行一次*/
