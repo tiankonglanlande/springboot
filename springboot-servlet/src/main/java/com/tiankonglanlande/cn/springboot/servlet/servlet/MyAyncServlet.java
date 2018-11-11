@@ -1,5 +1,7 @@
 package com.tiankonglanlande.cn.springboot.servlet.servlet;
 
+import org.springframework.scheduling.annotation.Async;
+
 import javax.servlet.AsyncContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,9 +18,7 @@ public class MyAyncServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
-
-        AsyncContext asyncContext = req.getAsyncContext();
+        AsyncContext asyncContext = req.startAsync();
         asyncContext.start(()->{
             try {
                 resp.getWriter().print("hello this is MyAyncServlet!");
