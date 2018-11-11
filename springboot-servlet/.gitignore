@@ -23,4 +23,10 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+/src/main/resources/application.properties
+/.gitignore
+/.mvn/wrapper/maven-wrapper.jar
+/.mvn/wrapper/maven-wrapper.properties
+/mvnw.cmd
+/mvnw
 /.mvn/
