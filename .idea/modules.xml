@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot-duplicate-submit/springboot-duplicate-submit.iml" filepath="$PROJECT_DIR$/springboot-duplicate-submit/springboot-duplicate-submit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-event/springboot-event.iml" filepath="$PROJECT_DIR$/springboot-event/springboot-event.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-exception/springboot-exception.iml" filepath="$PROJECT_DIR$/springboot-exception/springboot-exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" filepath="$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-quartz/springboot-quartz.iml" filepath="$PROJECT_DIR$/springboot-quartz/springboot-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-schedule/springboot-schedule.iml" filepath="$PROJECT_DIR$/springboot-schedule/springboot-schedule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-servlet/springboot-servlet.iml" filepath="$PROJECT_DIR$/springboot-servlet/springboot-servlet.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot" />
+        <module name="springboot-duplicate-submit" />
+        <module name="springboot-event" />
+        <module name="springboot-exception" />
+        <module name="springboot-mybatis" />
+        <module name="springboot-quartz" />
+        <module name="springboot-schedule" />
+        <module name="springboot-schedule (1)" />
+        <module name="springboot-servlet" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot" target="1.5" />
+      <module name="springboot-duplicate-submit" target="1.8" />
+      <module name="springboot-event" target="1.8" />
+      <module name="springboot-exception" target="1.8" />
+      <module name="springboot-mybatis" target="1.8" />
+      <module name="springboot-quartz" target="1.8" />
+      <module name="springboot-schedule" target="1.8" />
+      <module name="springboot-schedule (1)" target="1.8" />
+      <module name="springboot-servlet" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
