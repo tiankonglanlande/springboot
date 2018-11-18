@@ -445,7 +445,7 @@ public class JsonCityBeanTypeHandler extends BaseTypeHandler<CityBean> {
 
 如果是存储的是json集合字符串可以这样
 
-修改student表添加一个visited字段
+修改student表添加一个visited字段（数据随便插入的不要当真哈！）
 ```sql
 
 alter table student add visited varchar(256) COMMENT '去过的地方jsonarray存储[{"province":"广东省","city":"深圳市","district":"南山区"}]';
