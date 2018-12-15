@@ -87,7 +87,7 @@ pwd解密后:u.pwd
 
 [源码下载链接](https://github.com/tiankonglanlande/springboot)
 
-[源码下载链接:http://www.lskyf.com/view/27](http://www.lskyf.com/view/27)
+[原文链接:http://www.lskyf.com/view/27](http://www.lskyf.com/view/27)
 
 [参考文档](https://github.com/ulisesbocchio/jasypt-spring-boot)
 

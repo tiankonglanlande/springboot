@@ -10,6 +10,10 @@
         <option value="$PROJECT_DIR$/springboot-servlet/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-event/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-encryption-configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-encryption-configuration-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-jasypt-simple/pom.xml" />
       </list>
     </option>
   </component>
