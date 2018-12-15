@@ -86,6 +86,9 @@ pwd解密后:u.pwd
 下一篇我将介绍如何自定义一个stater将jasypt封装为一个stater供多个项目使用，同时运行时动态传入加密密码
 
 [源码下载链接](https://github.com/tiankonglanlande/springboot)
-[原文链接](https://github.com/tiankonglanlande/springboot)
+
+[源码下载链接:http://www.lskyf.com/view/27](http://www.lskyf.com/view/27)
+
+[参考文档](https://github.com/ulisesbocchio/jasypt-spring-boot)
 
 作者：天空蓝蓝的，版权所有，欢迎保留原文链接进行转载：)
