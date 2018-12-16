@@ -15,9 +15,9 @@ public class JasyptSimpleApplicationTests {
 	@Autowired
 	private StringEncryptor stringEncryptor;
 
-	@Value("u.username")
+	@Value("${u.username}")
 	private String username;
-	@Value("u.pwd")
+	@Value("${u.pwd}")
 	private String pwd;
 
 	@Test

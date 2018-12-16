@@ -62,9 +62,9 @@ u.pwd=ENC(+v5XN2Tv+d6VDfpeapME+S6vw2nOfE9L/1sjh6UFzso=)
 在JasyptSimpleApplicationTests测试类中编写测试方法验证是否获取到解密串
 ```java
 public class JasyptSimpleApplicationTests {
-   @Value("u.username")
+   @Value("${u.username}")
 	private String username;
-	@Value("u.pwd")
+	@Value("${u.pwd}")
 	private String pwd;
 
 	@Test
@@ -76,11 +76,11 @@ public class JasyptSimpleApplicationTests {
 ```
 运行测试方法jiemi控制台输出
 ```
-username解密后:u.username
-pwd解密后:u.pwd
+username解密后:tiankonglanlande
+pwd解密后:tiankonglanlande_pwd
 
 ```
-可以看出正好使我们加密之前的值。
+可以看出正好是我们加密之前的值。
 是不是很简单呢感谢开源大神给我们提供的jasypt开源项目使我们的配置文件内容加密变得这么简单
 #### 但是我们的项目可能需要动态的传入密码而不是写死在配置文件里面，如果写死在配置文件里面就像将们上了锁然后又把钥匙交给了小偷一样。毫无意义！
 下一篇我将介绍如何自定义一个stater将jasypt封装为一个stater供多个项目使用，同时运行时动态传入加密密码
