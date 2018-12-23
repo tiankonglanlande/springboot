@@ -10,31 +10,15 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class DemoApplicationTests {
-
-	@Autowired
-	private StringEncryptor stringEncryptor;
 	@Value("${u.username}")
-	private String puname;
+	private String username;
 	@Value("${u.pwd}")
-	private String ppwd;
-
-
+	private String pwd;
 
 	@Test
 	public void contextLoads() {
-		String username="root-test";
-		String pwd="123456890";
-
-		System.out.println("username:"+stringEncryptor.encrypt(username));
-		System.out.println("pwd:"+stringEncryptor.encrypt(pwd));
-		System.out.println("解密：========");
-		System.out.println("username："+stringEncryptor.decrypt(stringEncryptor.encrypt(username)));
-		System.out.println("pwd："+stringEncryptor.decrypt(stringEncryptor.encrypt(pwd)));
-
-		System.out.println("解密2：========");
-		System.out.println("username："+puname);
-		System.out.println("pwd：" + ppwd);
+		System.out.println("读取username:"+username);
+		System.out.println("读取pwd:"+pwd);
 
 	}
-
 }
