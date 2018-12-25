@@ -1,7 +1,7 @@
 package com.tiankonglanlande.cn.springboot.duplicatesubmit.exception;
 
 /**
- * @author 天空蓝蓝的
+ * @author 猿份哥
  * 自定义异常
  */
 public class DuplicateSubmitException extends Exception {

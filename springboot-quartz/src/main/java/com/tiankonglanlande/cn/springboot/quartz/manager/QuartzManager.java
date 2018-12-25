@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Date;
 
 /**
- * @author 天空蓝蓝的
+ * @author 猿份哥
  */
 @Configuration
 public class QuartzManager {

@@ -7,7 +7,7 @@ import org.springframework.scheduling.quartz.AdaptableJobFactory;
 import org.springframework.stereotype.Component;
 
 /**
- * @author 天空蓝蓝的
+ * @author 猿份哥
  */
 @Component
 public class MyJobFactory extends AdaptableJobFactory{

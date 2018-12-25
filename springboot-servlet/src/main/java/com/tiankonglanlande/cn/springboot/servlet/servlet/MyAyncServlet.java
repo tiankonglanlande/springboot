@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @author 天空蓝蓝的
+ * @author 猿份哥
  */
 @WebServlet(urlPatterns = "/my/ayncservlet",asyncSupported = true)
 public class MyAyncServlet extends HttpServlet {

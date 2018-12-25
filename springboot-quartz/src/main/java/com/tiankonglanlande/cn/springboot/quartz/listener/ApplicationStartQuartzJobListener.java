@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.ContextRefreshedEvent;
 
 /**
- * @author 天空蓝蓝的
+ * @author 猿份哥
  */
 @Slf4j
 @Configuration

@@ -3,7 +3,7 @@ package com.tiankonglanlande.cn.springboot.duplicatesubmit.annotation;
 import java.lang.annotation.*;
 
 /**
- * @author 天空蓝蓝的
+ * @author 猿份哥
  * @description 防止表单重复提交注解
  */
 @Retention(RetentionPolicy.RUNTIME)

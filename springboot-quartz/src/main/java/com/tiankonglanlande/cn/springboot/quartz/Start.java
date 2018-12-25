@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 
 /**
- * @author 天空蓝蓝的
+ * @author 猿份哥
  */
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @Configuration
