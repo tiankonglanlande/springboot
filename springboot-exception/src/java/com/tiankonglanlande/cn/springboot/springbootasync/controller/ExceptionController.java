@@ -1,4 +1,4 @@
-package com.tiankonglanlande.cn.springboot.controller;
+package com.tiankonglanlande.cn.springboot.springbootasync.controller;
 
 import com.tiankonglanlande.cn.springboot.MyException;
 import com.tiankonglanlande.cn.springboot.result.Result;

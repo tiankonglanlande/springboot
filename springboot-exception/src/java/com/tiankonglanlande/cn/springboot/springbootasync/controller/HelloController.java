@@ -1,4 +1,4 @@
-package com.tiankonglanlande.cn.springboot.controller;
+package com.tiankonglanlande.cn.springboot.springbootasync.controller;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
