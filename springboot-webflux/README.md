@@ -93,6 +93,7 @@ public class FluxController {
 说明：item方法是调用业务层单个数据，使用Mono返回；list是调用多个数据，使用Flux返回
 
 浏览器输入：http://localhost:8080/student/item
+
 返回结果：单个学生信息
 ```json
 {
@@ -117,7 +118,9 @@ public class FluxController {
 
 #### 使用路由的方式调用
 步骤：
+
 1.定义handler
+
 StudentHandler.java
 ```java
 /**
@@ -142,10 +145,14 @@ public class StudentHandler {
 }
 ```
 说明：
+
 ok()：是ServerResponse的静态方法需要导入import static org.springframework.web.reactive.function.server.ServerResponse.ok;
 也可以直接ServerResponse.ok()方式调用
+
 contentType:响应数据格式
+
 Mono.just：返回单条数据信息
+
 Flux.fromIterable：返回多条数据信息
 
 2.定义router
@@ -174,11 +181,16 @@ public class RouteConfig {
 }
 ```
 说明：
+
 route：静态方法导入import static org.springframework.web.reactive.function.server.RouterFunctions.route;
+
 GET：接收GET请求和访问路径如："/stu"静态方法导入import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
 
+
 3.测试访问
+
 浏览器输入：http://localhost:8080/stu
+
 返回结果：单个学生信息
 ```json
 {
@@ -187,6 +199,7 @@ GET：接收GET请求和访问路径如："/stu"静态方法导入import static 
 }
 ```
 浏览器输入：http://localhost:8080/students
+
 返回结果：学习列表
 ```json
 [
