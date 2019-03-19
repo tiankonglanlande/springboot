@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.tiankonglanlande.cn.springboot.mybatis</groupId>
-	<artifactId>mybatis-druid</artifactId>
+	<artifactId>springboot-mybatis-druid</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
