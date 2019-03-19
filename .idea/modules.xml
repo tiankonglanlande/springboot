@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$//springboot.iml" filepath="$PROJECT_DIR$//springboot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot-duplicate-submit/springboot-configuration-encryption.iml" filepath="$PROJECT_DIR$/springboot-duplicate-submit/springboot-configuration-encryption.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-valid/.mvn/.mvn.iml" filepath="$PROJECT_DIR$/springboot-valid/.mvn/.mvn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-druid/mybatis-druid.iml" filepath="$PROJECT_DIR$/springboot-mybatis-druid/mybatis-druid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-async/springboot-async.iml" filepath="$PROJECT_DIR$/springboot-async/springboot-async.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-duplicate-submit/springboot-duplicate-submit.iml" filepath="$PROJECT_DIR$/springboot-duplicate-submit/springboot-duplicate-submit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot-encryption-configuration/springboot-encryption-configuration.iml" filepath="$PROJECT_DIR$/springboot-encryption-configuration/springboot-encryption-configuration.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-encryption-configuration-demo/springboot-encryption-configuration-demo.iml" filepath="$PROJECT_DIR$/springboot-encryption-configuration-demo/springboot-encryption-configuration-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-encryption-configuration-stater/springboot-encryption-configuration-stater.iml" filepath="$PROJECT_DIR$/springboot-encryption-configuration-stater/springboot-encryption-configuration-stater.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-event/springboot-event.iml" filepath="$PROJECT_DIR$/springboot-event/springboot-event.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-exception/springboot-exception.iml" filepath="$PROJECT_DIR$/springboot-exception/springboot-exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-jasypt-simple/springboot-jasypt-simple.iml" filepath="$PROJECT_DIR$/springboot-jasypt-simple/springboot-jasypt-simple.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" filepath="$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-quartz/springboot-quartz.iml" filepath="$PROJECT_DIR$/springboot-quartz/springboot-quartz.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-schedule/springboot-schedule.iml" filepath="$PROJECT_DIR$/springboot-schedule/springboot-schedule.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-servlet/springboot-servlet.iml" filepath="$PROJECT_DIR$/springboot-servlet/springboot-servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-upload/springboot-upload.iml" filepath="$PROJECT_DIR$/springboot-upload/springboot-upload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-valid/springboot-valid.iml" filepath="$PROJECT_DIR$/springboot-valid/springboot-valid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-webflux/springboot-webflux.iml" filepath="$PROJECT_DIR$/springboot-webflux/springboot-webflux.iml" />
     </modules>
   </component>
 </project>

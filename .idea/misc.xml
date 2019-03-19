@@ -14,6 +14,13 @@
         <option value="$PROJECT_DIR$/springboot-encryption-configuration/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-encryption-configuration-demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-jasypt-simple/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-vlidator/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-encryption-configuration-stater/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-vlid/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-webflux/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-upload/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis-druid/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-async/pom.xml" />
       </list>
     </option>
   </component>

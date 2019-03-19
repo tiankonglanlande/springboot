@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mybatis-druid" />
         <module name="springboot" />
+        <module name="springboot-async" />
         <module name="springboot-configuration-encryption" />
         <module name="springboot-duplicate-submit" />
         <module name="springboot-encryption-configuration" />
         <module name="springboot-encryption-configuration-demo" />
+        <module name="springboot-encryption-configuration-stater" />
         <module name="springboot-event" />
         <module name="springboot-exception" />
         <module name="springboot-jasypt-simple" />
@@ -19,22 +22,53 @@
         <module name="springboot-schedule" />
         <module name="springboot-schedule (1)" />
         <module name="springboot-servlet" />
+        <module name="springboot-upload" />
+        <module name="springboot-valid" />
+        <module name="springboot-webflux" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mybatis-druid" target="1.8" />
       <module name="springboot" target="1.8" />
+      <module name="springboot-async" target="1.8" />
       <module name="springboot-configuration-encryption" target="1.8" />
       <module name="springboot-duplicate-submit" target="1.8" />
       <module name="springboot-encryption-configuration" target="1.8" />
       <module name="springboot-encryption-configuration-demo" target="1.8" />
+      <module name="springboot-encryption-configuration-stater" target="1.8" />
       <module name="springboot-event" target="1.8" />
       <module name="springboot-exception" target="1.8" />
       <module name="springboot-jasypt-simple" target="1.8" />
       <module name="springboot-mybatis" target="1.8" />
+      <module name="springboot-mybatis-druid" target="1.8" />
       <module name="springboot-quartz" target="1.8" />
       <module name="springboot-schedule" target="1.8" />
       <module name="springboot-schedule (1)" target="1.8" />
       <module name="springboot-servlet" target="1.8" />
+      <module name="springboot-upload" target="1.8" />
+      <module name="springboot-valid" target="1.8" />
+      <module name="springboot-vlid" target="1.8" />
+      <module name="springboot-webflux" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mybatis-druid" options="-parameters" />
+      <module name="springboot-async" options="-parameters" />
+      <module name="springboot-duplicate-submit" options="-parameters" />
+      <module name="springboot-encryption-configuration-demo" options="-parameters" />
+      <module name="springboot-encryption-configuration-stater" options="-parameters" />
+      <module name="springboot-event" options="-parameters" />
+      <module name="springboot-exception" options="-parameters" />
+      <module name="springboot-jasypt-simple" options="-parameters" />
+      <module name="springboot-mybatis-druid" options="-parameters" />
+      <module name="springboot-quartz" options="-parameters" />
+      <module name="springboot-schedule" options="-parameters" />
+      <module name="springboot-servlet" options="-parameters" />
+      <module name="springboot-upload" options="-parameters" />
+      <module name="springboot-valid" options="-parameters" />
+      <module name="springboot-vlid" options="-parameters" />
+      <module name="springboot-webflux" options="-parameters" />
+    </option>
   </component>
 </project>

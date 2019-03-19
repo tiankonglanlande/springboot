@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-async" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-duplicate-submit" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-encryption-configuration" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-encryption-configuration-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-encryption-configuration-stater" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-event" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-exception" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jasypt-simple" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-mybatis-druid" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-quartz" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-schedule" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-servlet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-upload" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-valid" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-webflux" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
