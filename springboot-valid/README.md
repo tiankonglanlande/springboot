@@ -1,4 +1,4 @@
-## 最近发现这段代码不执行
+## 最近发现ExceptionControllerAdvice 这段代码不执行
 ```
     @ExceptionHandler(BindException.class)
     @ResponseBody
