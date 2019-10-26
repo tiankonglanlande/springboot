@@ -8,4 +8,4 @@
 
 # chrome扩展程序让你的浏览器无比强大也许你可以看看
 
-<a href="http://cj.lskyf.com/"
+点击访问： http://cj.lskyf.com/
