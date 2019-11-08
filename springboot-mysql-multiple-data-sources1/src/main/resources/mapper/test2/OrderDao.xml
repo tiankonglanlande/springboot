@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yuanfenge.multiple.test2.dao.OrderDao" >
+
+    <insert id="insertOrder">
+        insert  into tbl_order values (#{id},#{sn})
+    </insert>
+
+    <select id="list" resultType="com.yuanfenge.multiple.test2.bean.Order">
+       select id,sn FROM tbl_order
+    </select>
+</mapper>
