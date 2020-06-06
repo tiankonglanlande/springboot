@@ -132,3 +132,10 @@ public class TestController {
 分包加载不支持分布式事物，如果是多个数据库的事物@Transaction将会失效，所以使用这种方式要避免分布式事物。
 
 
+
+
+[源码下载链接](https://github.com/tiankonglanlande/springboot)
+
+[原文链接: https://www.lskyf.com/post/103](https://www.lskyf.com/post/103)
+
+作者：猿份哥，版权所有，欢迎保留原文链接进行转载：)
