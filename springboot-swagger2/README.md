@@ -133,7 +133,7 @@ public class TestController {
 
 ### 总结
 
-很多新东西都是其实已经不是新东西了，不仅官网存在demo特别是网上的活雷锋已经帮我们避免了许多坑。多向别人学习是多么重要啊！
+很多自己认为的新东西其实已经不是新东西了，不仅官网存在demo特别是网上的活雷锋已经帮我们避免了许多坑。多向别人学习是多么重要啊！
 
 [源码下载链接](https://github.com/tiankonglanlande/springboot)
 
