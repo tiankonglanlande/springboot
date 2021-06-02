@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>springboot 多个文件上传</title>
+</head>
+<body>
+<form th:action="@{multiUpload}" th:method="post" enctype="multipart/form-data">
+    <label>选择文件：</label><input th:type="file" th:name="file"><br>
+    <label>选择文件：</label><input th:type="file" th:name="file"><br>
+    <label>选择文件：</label><input th:type="file" th:name="file"><br>
+    <label>选择文件：</label><input th:type="file" th:name="file"><br>
+    <input th:type="submit" th:value="上传">
+</form>
+</body>
+</html>

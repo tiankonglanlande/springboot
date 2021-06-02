@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>springboot 单个文件上传</title>
+</head>
+<body>
+<form th:action="@{doUpload}" th:method="post" enctype="multipart/form-data">
+    <label>选择文件：</label><input th:type="file" th:name="file">
+    <input th:type="submit" th:value="上传">
+</form>
+</body>
+</html>
