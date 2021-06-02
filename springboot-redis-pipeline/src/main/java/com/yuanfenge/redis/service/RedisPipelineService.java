@@ -32,7 +32,7 @@ public class RedisPipelineService {
             @Override
             public <K, V> Object execute(RedisOperations<K, V> redisOperations) throws DataAccessException {
                 for (Map<String, String> needSave : saveList) {
-                    redisTemplate.opsForValue().set(needSave.get("key"), needSave.get("value"), timeout,unit);
+                    redisTemplate.opsForValue().set(needSave.get("key"), needSave.get("value"), timeout, unit);
                 }
                 return null;
             }

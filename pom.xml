@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.yuanfenge.springboot</groupId>
+    <artifactId>spring boot</artifactId>
+    <version>1.1</version>
+    <modules>
+        <module>springboot-async</module>
+        <module>springboot-duplicate-submit</module>
+        <module>springboot-loading-configuration-files</module>
+        <module>springboot-encryption-configuration-stater</module>
+        <module>springboot-encryption-configuration-demo</module>
+        <module>springboot-event</module>
+        <module>springboot-exception</module>
+        <module>springboot-jasypt-simple</module>
+        <module>springboot-mybatis-druid</module>
+        <module>springboot-mysql-multiple-data-sources1</module>
+        <module>springboot-schedule</module>
+        <module>springboot-quartz</module>
+        <module>springboot-redis-pipeline</module>
+        <module>springboot-servlet</module>
+        <module>springboot-swagger2</module>
+        <module>springboot-simple-stater</module>
+        <module>springboot-thumbnailator-base64</module>
+        <module>springboot-upload</module>
+        <module>springboot-valid</module>
+        <module>springboot-webflux</module>
+
+    </modules>
+    <packaging>pom</packaging>
+
+    <properties>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <junit.version>4.12</junit.version>
+        <base.version>2.5.0</base.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--spring boot 2.5.0-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${base.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${base.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.20</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>2.2.4.RELEASE</version>
+            </dependency>
+
+
+        </dependencies>
+
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <addResources>true</addResources>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

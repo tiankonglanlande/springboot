@@ -85,9 +85,9 @@ spring:
       cache: false
 
 mybatis:
-  type-handlers-package:  com.tiankonglanlande.cn.springboot.mybatis.typehandler
+  type-handlers-package:  com.yuanfenge.springboot.mybatis.typehandler
   mapperLocations: classpath:mapper/**.xml
-  typeAliasesPackage:  com.tiankonglanlande.cn.springboot.mybatis.bean
+  typeAliasesPackage:  com.yuanfenge.springboot.mybatis.bean
   # 开启自动映射
   configuration:
     map-underscore-to-camel-case: true
@@ -103,7 +103,7 @@ spring.datasource.password= root
 #### 启动文件相关配置
 ```java
 @SpringBootApplication
-@MapperScan("com.tiankonglanlande.cn.springboot.mybatis.dao")
+@MapperScan("com.yuanfenge.springboot.mybatis.dao")
 public class MybatisDruidApplication {
 
 	public static void main(String[] args) {
@@ -148,7 +148,7 @@ public interface StudentDao {
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.tiankonglanlande.cn.springboot.mybatis.dao.StudentDao" >
+<mapper namespace="StudentDao" >
 
     <select id="selectStudentList" resultType="Student">
         SELECT * FROM student
@@ -253,9 +253,9 @@ public List<Student> selectStudentListByAnnotation(){
 首先我们看之前在application.yml中配置mybatis的一段代码
 ```yml
 mybatis:
-  type-handlers-package:  com.tiankonglanlande.cn.springboot.mybatis.typehandler
+  type-handlers-package:  com.yuanfenge.springboot.mybatis.typehandler
 ```
-说明：这一段代码会扫描com.tiankonglanlande.cn.springboot.mybatis.typehandler包下面的TypeHandler注入到spring容器
+说明：这一段代码会扫描com.yuanfenge.springboot.mybatis.typehandler包下面的TypeHandler注入到spring容器
 
 #### 修改一下Student实体属性为集合
 ```java

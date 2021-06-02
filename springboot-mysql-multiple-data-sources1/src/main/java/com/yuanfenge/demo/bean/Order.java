@@ -5,8 +5,8 @@ import java.io.Serializable;
 
 public class Order implements Serializable {
 
-   private Integer id;
-   private String name;
+    private Integer id;
+    private String name;
 
     public Integer getId() {
         return id;

@@ -16,11 +16,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 public class ImageTest {
 
-	@Test
-	public void imageFileToBase64() throws Exception {
-		String filePath="D:\\data\\test\\0.jpg";
-		String imageStr = ImageUtils.resizeImage(filePath, 60, 300, 420);
-		System.out.println(imageStr);
-	}
+    @Test
+    public void imageFileToBase64() throws Exception {
+        String filePath = "D:\\data\\test\\0.jpg";
+        String imageStr = ImageUtils.resizeImage(filePath, 60, 300, 420);
+        System.out.println(imageStr);
+    }
 
 }

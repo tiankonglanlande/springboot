@@ -1,29 +1,29 @@
 # 使用druid数据源
 spring:
-    datasource:
-        druid:
-          driver-class-name: com.mysql.cj.jdbc.Driver
-          filters: stat
-          maxActive: 20
-          initialSize: 1
-          maxWait: 60000
-          minIdle: 1
-          timeBetweenEvictionRunsMillis: 60000
-          minEvictableIdleTimeMillis: 300000
-          validationQuery: select 'x'
-          testWhileIdle: true
-          testOnBorrow: false
-          testOnReturn: false
-          poolPreparedStatements: true
-          maxOpenPreparedStatements: 20
-          db-type: com.alibaba.druid.pool.DruidDataSource
-    thymeleaf:
-      cache: false
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      db-type: com.alibaba.druid.pool.DruidDataSource
+  thymeleaf:
+    cache: false
 
 mybatis:
-  type-handlers-package:  com.tiankonglanlande.cn.springboot.mybatis.typehandler
+  type-handlers-package:  com.yuanfenge.springboot.mybatis.typehandler
   mapperLocations: classpath:mapper/**.xml
-  typeAliasesPackage:  com.tiankonglanlande.cn.springboot.mybatis.bean
+  typeAliasesPackage:  com.yuanfenge.springboot.mybatis.bean
   # 开启自动映射
   configuration:
     map-underscore-to-camel-case: true

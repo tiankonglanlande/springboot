@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.tiankonglanlande.cn.springboot.stater.SupportConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.yuanfenge.springboot.stater.SupportConfiguration

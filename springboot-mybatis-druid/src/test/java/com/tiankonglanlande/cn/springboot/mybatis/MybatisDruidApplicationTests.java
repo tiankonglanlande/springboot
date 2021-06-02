@@ -1,4 +1,4 @@
-package com.tiankonglanlande.cn.springboot.mybatis;
+package com.yuanfenge.springboot.mybatis;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,8 +9,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class MybatisDruidApplicationTests {
 
-	@Test
-	public void contextLoads() {
-	}
+    @Test
+    public void contextLoads() {
+    }
 
 }

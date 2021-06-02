@@ -8,6 +8,6 @@ import org.apache.ibatis.annotations.Param;
 public interface UserDao {
 
     @Insert("insert tbl_user values (#{id},#{name})")
-    int save(@Param("id")Integer id,@Param("name")String name);
+    int save(@Param("id") Integer id, @Param("name") String name);
 
 }

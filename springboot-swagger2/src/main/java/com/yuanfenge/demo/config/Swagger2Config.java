@@ -17,7 +17,7 @@ public class Swagger2Config {
 
 
     @Bean
-    public Docket docket(){
+    public Docket docket() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
@@ -25,12 +25,13 @@ public class Swagger2Config {
                 .paths(PathSelectors.any())
                 .build();
     }
-    private ApiInfo apiInfo(){
+
+    private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("Spring boot2x快速整合swagger2（Open Api3注解版）")//文档标题
                 .license("协议")
                 .licenseUrl("https://www.lskyf.com")
-                .contact(new Contact("猿份哥","https://www.lskyf.com","zswdxl_111@sina.com"))//文档联系人信息
+                .contact(new Contact("猿份哥", "https://www.lskyf.com", "zswdxl_111@sina.com"))//文档联系人信息
                 .version("1.0")//文档版本号
                 .build();
     }

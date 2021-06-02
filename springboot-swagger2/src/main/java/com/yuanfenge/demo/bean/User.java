@@ -8,17 +8,18 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@ApiModel(value="用户model",description="请求参数类" )
+@ApiModel(value = "用户model", description = "请求参数类")
 public class User implements Serializable {
 
-   @ApiParam("用户ID编号")
-   private Integer id;
-   @ApiParam("用户名")
-   private String name;
-   @ApiParam("年龄")
-   private int age;
+    @ApiParam("用户ID编号")
+    private Integer id;
+    @ApiParam("用户名")
+    private String name;
+    @ApiParam("年龄")
+    private int age;
 }

@@ -1,0 +1,45 @@
+# 单个key value 写法
+color: blue
+
+# 对象写法1
+# student: {name: lily,age: 22,fromShenSheng: false}
+# 对象写法2
+student:
+  name: lily
+  age: 22
+  fromShenSheng: false
+  # list集合写法1
+  petList: [猫,狗,兔子]
+  # list集合写法2
+  hobby-list:
+    - 唱歌
+    - 跳舞
+    - 运动
+  # map集合写法1
+  identity: {home: 孩子, school: 学生}
+  # map集合写法2
+  plainList:
+    morning: 上课
+    afternoon: 午休
+    night: 自习
+
+## external info
+external:
+  student:
+    name: lily
+    age: 22
+    fromShenSheng: false
+    # list集合写法1
+    petList: [猫,狗,兔子]
+    # list集合写法2
+    hobby-list:
+      - 唱歌
+      - 跳舞
+      - 运动
+    # map集合写法1
+    identity: {home: 孩子, school: 学生}
+    # map集合写法2
+    plainList:
+      morning: 上课
+      afternoon: 午休
+      night: 自习

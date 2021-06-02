@@ -14,28 +14,29 @@ import java.io.*;
  */
 public class ImageUtils {
 
-    private static String ImageFormat="jpg";
+    private static String ImageFormat = "jpg";
 
 
     /**
      * 按照比例和规格压缩图片得到base64图片字符串
+     *
      * @param maxSize 单位kb
      * @param w
      * @param h
      * @return
      */
-    public static String resizeImage(String filePath,int maxSize,int w,int h){
+    public static String resizeImage(String filePath, int maxSize, int w, int h) {
         try {
             BufferedImage src = fileToBufferedImage(filePath);
             BufferedImage output = Thumbnails.of(src).size(w, h).asBufferedImage();
             String base64 = imageToBase64(output);
-            while (base64.length() - base64.length() / 8 * 2 > maxSize*1000) {
+            while (base64.length() - base64.length() / 8 * 2 > maxSize * 1000) {
                 output = Thumbnails.of(output).scale(0.9f).asBufferedImage();
                 base64 = imageToBase64(output);
             }
             return imageToBase64(output);
         } catch (Exception e) {
-           e.printStackTrace();
+            e.printStackTrace();
         }
         return null;
     }
@@ -43,18 +44,20 @@ public class ImageUtils {
 
     /**
      * 图片文件转BufferedImage
+     *
      * @param filePath
      * @return
      * @throws Exception
      */
-    public static BufferedImage fileToBufferedImage(String filePath) throws Exception{
-        FileInputStream is=new FileInputStream(filePath);
+    public static BufferedImage fileToBufferedImage(String filePath) throws Exception {
+        FileInputStream is = new FileInputStream(filePath);
         BufferedImage img = ImageIO.read(is);
-        return  img;
+        return img;
     }
 
     /**
      * 将图片base64字符串转换为BufferedImage
+     *
      * @param base64string
      * @return
      */
@@ -71,17 +74,19 @@ public class ImageUtils {
 
     /**
      * 将base64字符转换为输入流
+     *
      * @param base64string
      * @return
      */
     private static InputStream base64StringToInputStream(String base64string) {
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(base64string.getBytes());
-        InputStream inputStream=byteArrayInputStream;
+        InputStream inputStream = byteArrayInputStream;
         return inputStream;
     }
 
     /**
      * 将BufferedImage转换为base64字符串
+     *
      * @param bufferedImage
      * @return
      */
