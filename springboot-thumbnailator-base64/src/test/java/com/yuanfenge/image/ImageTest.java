@@ -1,10 +1,10 @@
 package com.yuanfenge.image;
 
 import com.yuanfenge.image.service.ImageUtils;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.junit.jupiter.api.Test;
 
 
 /**
@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @createTime 2019/8/04 16:35
  */
 @SpringBootTest
-@RunWith(SpringRunner.class)
+
 public class ImageTest {
 
     @Test

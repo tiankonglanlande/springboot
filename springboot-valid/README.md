@@ -1,3 +1,12 @@
+## 加入依赖
+```xml
+<dependencies>
+     <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-validation</artifactId>
+      </dependency>
+</dependencies>
+```
 ## 最近发现ExceptionControllerAdvice 这段代码不执行
 ```
     @ExceptionHandler(BindException.class)

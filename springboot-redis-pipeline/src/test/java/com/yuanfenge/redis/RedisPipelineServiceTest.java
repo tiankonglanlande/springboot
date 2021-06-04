@@ -1,12 +1,12 @@
 package com.yuanfenge.redis;
 
 import com.yuanfenge.redis.service.RedisPipelineService;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  * @createTime 2019/8/01 20:35
  */
 @SpringBootTest
-@RunWith(SpringRunner.class)
+
 public class RedisPipelineServiceTest {
 
     @Autowired

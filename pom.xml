@@ -23,7 +23,6 @@
         <module>springboot-redis-pipeline</module>
         <module>springboot-servlet</module>
         <module>springboot-swagger2</module>
-        <module>springboot-simple-stater</module>
         <module>springboot-thumbnailator-base64</module>
         <module>springboot-upload</module>
         <module>springboot-valid</module>

@@ -1,7 +1,6 @@
 package com.yuanfenge.vlid.bean;
 
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 import lombok.AllArgsConstructor;
@@ -20,7 +19,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Bean {
 
-    @NotEmpty(message = "不能为空")
+    @NotNull(message = "不能为空")
     private String name;
 
     @Min(value = 1, message = "大于0")

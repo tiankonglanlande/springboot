@@ -1,11 +1,10 @@
-package com.yuanfenge.servlet;
+package com.yuanfenge.mybatis.druid;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-
 @SpringBootTest
-public class ServletApplicationTests {
+public class MybatisDruidApplicationTests {
 
     @Test
     public void contextLoads() {
