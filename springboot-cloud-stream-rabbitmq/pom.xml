@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.yuanfenge.springboot</groupId>
+        <artifactId>spring boot</artifactId>
+        <version>1.1</version>
+    </parent>
+
+    <groupId>com.yuanfenge.springboot.stream.rabbitmq</groupId>
+    <artifactId>springboot-cloud-stream-rabbitmq</artifactId>
+    <version>1.0</version>
+
+    <modules>
+        <module>springboot-cloud-stream-rabbitmq-common</module>
+        <module>springboot-cloud-stream-rabbitmq-listener</module>
+        <module>springboot-cloud-stream-rabbitmq-send</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <properties>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <addResources>true</addResources>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

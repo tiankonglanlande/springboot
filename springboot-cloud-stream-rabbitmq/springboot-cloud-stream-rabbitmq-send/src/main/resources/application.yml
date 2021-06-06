@@ -1,0 +1,25 @@
+## rabbitmq消息提供者配置
+server:
+  port: 9001
+
+spring:
+  application:
+    name: springboot-cloud-stream-rabbitmq-send
+  cloud:
+    stream:
+      binders: # 在此处配置要绑定的rabbitmq的服务信息；
+        defaultRabbit: # 表示定义的名称，用于于binding整合
+          type: rabbit # 消息组件类型
+          environment: # 设置rabbitmq的相关的环境配置
+            spring:
+              rabbitmq:
+                host: 192.168.56.200
+                port: 5672
+                username: yuanfenge
+                password: yuanfenge
+      bindings: # 服务的整合处理
+        output: # 这个名字是一个通道的名称
+          destination: CustomerExchange # 要使用的Exchange路由名称
+          content-type: application/json # 设置消息类型，本次为json，文本则设置“text/plain”
+          producer:
+            group: yuanfenge_group
