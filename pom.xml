@@ -27,6 +27,11 @@
         <module>springboot-upload</module>
         <module>springboot-valid</module>
         <module>springboot-webflux</module>
+        <module>springboot-cloud-stream-rabbitmq</module>
+        <module>springboot-cloud-stream-rabbitmq-other</module>
+        <module>springboot-cloud-stream-rabbitmq\springboot-cloud-stream-rabbitmq-common</module>
+        <module>springboot-cloud-stream-rabbitmq\springboot-cloud-stream-rabbitmq-listener</module>
+        <module>springboot-cloud-stream-rabbitmq\springboot-cloud-stream-rabbitmq-send</module>
 
     </modules>
     <packaging>pom</packaging>
@@ -67,7 +72,6 @@
                 <artifactId>spring-boot-configuration-processor</artifactId>
                 <version>2.2.4.RELEASE</version>
             </dependency>
-
 
         </dependencies>
 
