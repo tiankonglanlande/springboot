@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.yanfenge.image</groupId>
-    <artifactId>${project.name}</artifactId>
+    <artifactId>springboot-thumbnailator-base64</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-thumbnailator-base64</name>
     <description>Demo project for Spring Boot</description>

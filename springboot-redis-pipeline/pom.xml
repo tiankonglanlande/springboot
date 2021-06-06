@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>com.yuanfenge</groupId>
-    <artifactId>${project.name}</artifactId>
+    <artifactId>springboot-redis-pipeline</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-redis-pipeline</name>
     <description>Demo project for Spring Boot</description>

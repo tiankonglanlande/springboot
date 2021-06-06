@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.yuanfenge.springboot</groupId>
-    <artifactId>${project.name}</artifactId>
+    <artifactId>springboot-upload</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-upload</name>
     <description>spring boot文件上传</description>

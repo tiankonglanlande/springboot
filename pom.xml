@@ -28,10 +28,10 @@
         <module>springboot-valid</module>
         <module>springboot-webflux</module>
         <module>springboot-cloud-stream-rabbitmq</module>
-        <module>springboot-cloud-stream-rabbitmq-other</module>
         <module>springboot-cloud-stream-rabbitmq\springboot-cloud-stream-rabbitmq-common</module>
         <module>springboot-cloud-stream-rabbitmq\springboot-cloud-stream-rabbitmq-listener</module>
         <module>springboot-cloud-stream-rabbitmq\springboot-cloud-stream-rabbitmq-send</module>
+        <module>springboot-starter-business-demo</module>
 
     </modules>
     <packaging>pom</packaging>

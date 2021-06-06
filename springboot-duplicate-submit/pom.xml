@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yuanfenge.springboot.duplicatesubmit</groupId>
-    <artifactId>${project.name}</artifactId>
+    <artifactId>springboot-duplicate-submit</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 

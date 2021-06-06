@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.yuanfenge.demo</groupId>
-    <artifactId>${project.name}</artifactId>
+    <artifactId>springboot-mysql-multiple-data-sources1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-mysql-multiple-data-sources1</name>
     <description>Demo project for Spring Boot</description>

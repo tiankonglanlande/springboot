@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>com.yuanfenge.springboot.mybatis</groupId>
-    <artifactId>${project.name}</artifactId>
+    <artifactId>springboot-mybatis-druid</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 

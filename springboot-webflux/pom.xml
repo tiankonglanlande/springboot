@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.springboot.yuanfenge.webflux</groupId>
-    <artifactId>${project.name}</artifactId>
+    <artifactId>springboot-webflux</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-webflux</name>
     <description>Demo project for Spring Boot</description>

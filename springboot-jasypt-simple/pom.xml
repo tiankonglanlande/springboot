@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.yuanfenge.springboot.jasypt.simple</groupId>
-    <artifactId>${project.name}</artifactId>
+    <artifactId>springboot-jasypt-simple</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-jasypt-simple</name>
     <description>springboot jasypt 简单例子</description>
