@@ -13,6 +13,10 @@ public class LoadingConfigApp {
         SpringApplication.run(LoadingConfigApp.class, args);
     }
 
+    /**
+     * 此处代码已废弃，在boot2.5.0版本已无效使用MyEnvironmentPostProcessor替代
+      */
+    @Deprecated
     @Bean
     public static PropertySourcesPlaceholderConfigurer loadProperties() {
         PropertySourcesPlaceholderConfigurer configurer = new PropertySourcesPlaceholderConfigurer();
@@ -21,6 +25,5 @@ public class LoadingConfigApp {
         configurer.setProperties(yaml.getObject());
         return configurer;
     }
-
 
 }

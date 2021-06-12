@@ -10,10 +10,15 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 升级2.5.0新增MyEnvironmentPostProcessor来加载外部yml
+ * 参照地址：
+ * https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#howto.application.troubleshoot-auto-configuration
+ */
 @Data
 @Component
 @Configuration
-@ConfigurationProperties(prefix = "external")
+@ConfigurationProperties(prefix = "student")
 public class ExternalStuYml implements Serializable {
 
     private String name;
