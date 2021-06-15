@@ -3,7 +3,6 @@ package com.yuanfenge.valid.group.controller;
 import com.yuanfenge.valid.group.bean.UserBean;
 import com.yuanfenge.valid.group.group.AddUserGroup;
 import com.yuanfenge.valid.group.group.CustomUseGroup;
-import com.yuanfenge.valid.group.group.UpdateUseGroup;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
