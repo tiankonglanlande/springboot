@@ -32,6 +32,7 @@
         <module>springboot-cloud-stream-rabbitmq\springboot-cloud-stream-rabbitmq-listener</module>
         <module>springboot-cloud-stream-rabbitmq\springboot-cloud-stream-rabbitmq-send</module>
         <module>springboot-starter-business-demo</module>
+        <module>springboot-JSR303</module>
 
     </modules>
     <packaging>pom</packaging>
