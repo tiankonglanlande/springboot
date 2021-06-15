@@ -112,6 +112,31 @@ com.yuanfenge.valid.group.custom.Status.error=状态错误
            }
  }
  ```
+## JSR303注解使用场景列表
+ |  注解   | 使用场景 |
+ |  ----  | ----  |
+ | AssertFalse | 只能为false  |
+ | AssertTrue | 只能为true  |
+ | DecimalMax | 必须小于${inclusive == true ? '或等于' : ''}{value}  |
+ | DecimalMin | 必须大于${inclusive == true ? '或等于' : ''}{value}  |
+ | Digits | 数字的值允许范围(只允许在{integer}位整数和{fraction}位小数范围内)  |
+ | Email |  一个合法的电子邮件地址 |
+ | Future | 需要是一个将来的时间  |
+ | FutureOrPresent | 需要是一个将来或现在的时间  |
+ | Max | 最大不能超过{value} |
+ | Min | 最小不能小于{value} |
+ | Negative | 必须是负数 |
+ | NegativeOrZero | 必须是负数或零 |
+ | NotBlank | 不能为空 |
+ | NotEmpty | 不能为空 |
+ | NotNull | 不能为null |
+ | Null | 必须为null |
+ | Past | 需要是一个过去的时间 |
+ | PastOrPresent | 需要是一个过去或现在的时间 |
+ | Pattern | 需要匹配正则表达式"{regexp}" |
+ | Positive | 必须是正数 |
+ | PositiveOrZero | 必须是正数或零 |
+ | Size | 个数必须在{min}和{max}之间 |
  
  [源码下载链接](https://github.com/tiankonglanlande/springboot)
  
