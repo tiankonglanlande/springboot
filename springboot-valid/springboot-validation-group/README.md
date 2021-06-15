@@ -1,4 +1,5 @@
 ## SpringBoot系列17-validation分组校验+自定义参数校验器
+### [原文链接: https://www.lskyf.com/post/212](https://www.lskyf.com/post/212)
 ## 加入依赖
 ```xml
 <dependencies>
@@ -114,7 +115,7 @@ com.yuanfenge.valid.group.custom.Status.error=状态错误
  
  [源码下载链接](https://github.com/tiankonglanlande/springboot)
  
- [原文链接: https://www.lskyf.com/post/211](https://www.lskyf.com/post/212)
+ [原文链接: https://www.lskyf.com/post/212](https://www.lskyf.com/post/212)
  
  作者：猿份哥，版权所有，欢迎保留原文链接进行转载：)
  
