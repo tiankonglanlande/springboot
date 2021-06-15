@@ -10,7 +10,7 @@
 
 点击访问： http://cj.lskyf.com/
 
-# 【猿份哥】-SpringBoot系列汇集
+# 【猿份哥】-SpringBoot系列汇集（如果不方便可以在每个文件下的README中查看）
  |  文章系列   | 原文链接 |
  |  ----  | ----  |
  | Spring Boot系列1-helloword | https://www.lskyf.com/post/8  | 
