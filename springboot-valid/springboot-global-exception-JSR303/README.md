@@ -1,4 +1,4 @@
-# SpringBoot系列16-统一异常处理（包含简单的JSR303参数校验）
+# SpringBoot系列17-统一异常处理（包含简单的JSR303参数校验）
 ### 原文链接：https://www.lskyf.com/post/211
 ## 方法1.通过ControllerAdvice实现+简单的JSR303参数校验实现
 ### 1.1 加入依赖
