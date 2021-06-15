@@ -33,6 +33,4 @@ public class TestContorller {
     private void customException() throws CustomException {
         throw new CustomException("customException!!!");
     }
-
-
 }
