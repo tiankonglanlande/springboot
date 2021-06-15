@@ -221,6 +221,8 @@ public class BaseController {
     }
 }
 ```
+## 更多关于JSR303参数校验请参照:[SpringBoot系列18-validation分组校验+自定义参数校验器: https://www.lskyf.com/post/212](https://www.lskyf.com/post/212)
+
  [源码下载链接](https://github.com/tiankonglanlande/springboot)
  
  [原文链接: https://www.lskyf.com/post/211](https://www.lskyf.com/post/211)

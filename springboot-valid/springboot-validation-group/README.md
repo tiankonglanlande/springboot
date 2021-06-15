@@ -138,6 +138,8 @@ com.yuanfenge.valid.group.custom.Status.error=状态错误
  | PositiveOrZero | 必须是正数或零 |
  | Size | 个数必须在{min}和{max}之间 |
  
+ ## 常用消息提示可参照源码ValidationMessages_zh_CN.properties查看
+ 
  [源码下载链接](https://github.com/tiankonglanlande/springboot)
  
  [原文链接: https://www.lskyf.com/post/212](https://www.lskyf.com/post/212)
