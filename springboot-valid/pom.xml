@@ -15,7 +15,7 @@
 
     <modules>
         <module>springboot-global-exception-JSR303</module>
-        <module>springboot-valid-group</module>
+        <module>springboot-validation-group</module>
     </modules>
 
 
