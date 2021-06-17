@@ -220,6 +220,10 @@ http://localhost:8080/getParam?num=1
 http://localhost:8080/post
 ![avatar](./测试效果图.jpg)
 
-
+ [源码下载链接](https://github.com/tiankonglanlande/springboot)
+ 
+ [原文链接: https://www.lskyf.com/post/213](https://www.lskyf.com/post/213)
+ 
+ 作者：猿份哥，版权所有，欢迎保留原文链接进行转载：)
 
 ​
