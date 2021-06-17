@@ -31,7 +31,7 @@ public class ExceptionController {
 
     @RequestMapping("/unlogin")
     public Result unlogin() throws Exception {
-        return ResultUtils.success(ResultEnum.UNLOGIN);
+        return ResultUtils.success(ResultEnum.NOT_LOGIN_IN);
     }
 
     @RequestMapping("/success")

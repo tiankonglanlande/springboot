@@ -1,8 +1,9 @@
 package com.yuanfenge.springboot.duplicatesubmit.aspect;
 
+import com.yuanfenge.commons.utils.UUIDUtil;
 import com.yuanfenge.springboot.duplicatesubmit.annotation.DuplicateSubmitToken;
 import com.yuanfenge.springboot.duplicatesubmit.constant.TextConstants;
-import com.yuanfenge.springboot.duplicatesubmit.exception.DuplicateSubmitException;
+import com.yuanfenge.exception.excption.DuplicateSubmitException;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -11,7 +12,8 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.UUID;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 /**
  * @author 猿份哥
@@ -39,47 +41,53 @@ public class DuplicateSubmitAspect {
                 String key = getDuplicateTokenKey(joinPoint);
                 Object t = request.getSession().getAttribute(key);
                 if (null == t) {
-                    String uuid = UUID.randomUUID().toString();
-                    request.getSession().setAttribute(key.toString(), uuid);
-                    log.info("token-key=" + key);
-                    log.info("token-value=" + uuid.toString());
-                } else {
+                    createKey(request, key);
+                } else if (valid(t,token.timeOut())){
                     throw new DuplicateSubmitException(TextConstants.REQUEST_REPEAT);
+                } else {
+                    createKey(request, key);
                 }
             }
 
         }
+    }
+
+    private void createKey(HttpServletRequest request, String key) {
+        String uuid = UUIDUtil.randomUUID();
+        long now = System.currentTimeMillis();
+        String value = uuid + "_" + now;
+        request.getSession().setAttribute(key, value);
+        log.info("token-key={};token-value={}",key, value);
+    }
+
+    /**
+     * 是否超时
+     * @param t
+     * @return
+     */
+    private boolean valid(Object t, long timeOut) {
+        String token = t.toString();
+        String[] arr = token.split("_");
+        long before = Long.parseLong(arr[1]);
+        long now = System.currentTimeMillis();
+        if (now-before<timeOut){
+            return true;
+        }
+        return false;
     }
 
     /**
      * 获取重复提交key
-     *
      * @param joinPoint
      * @return
      */
     public String getDuplicateTokenKey(JoinPoint joinPoint) {
-        String methodName = joinPoint.getSignature().getName();
-        StringBuilder key = new StringBuilder(DUPLICATE_TOKEN_KEY);
-        key.append(",").append(methodName);
-        return key.toString();
-    }
 
-    @AfterReturning("webLog() && @annotation(token)")
-    public void doAfterReturning(JoinPoint joinPoint, DuplicateSubmitToken token) {
-        // 处理完请求，返回内容
-        log.info("出方法：");
-        if (token != null) {
-            ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-            HttpServletRequest request = attributes.getRequest();
-            boolean isSaveSession = token.save();
-            if (isSaveSession) {
-                String key = getDuplicateTokenKey(joinPoint);
-                Object t = request.getSession().getAttribute(key);
-                if (null != t && token.type() == DuplicateSubmitToken.REQUEST) {
-                    request.getSession(false).removeAttribute(key);
-                }
-            }
-        }
+        String methodName = joinPoint.getSignature().getName();
+        String args = Arrays.asList(joinPoint.getArgs()).stream().map(i -> String.valueOf(i)).collect(Collectors.joining());
+        StringBuilder key = new StringBuilder(DUPLICATE_TOKEN_KEY);
+        key.append("_").append(methodName).append(args);
+        return key.toString();
     }
 
     /**

@@ -1,4 +1,4 @@
-package com.yuanfenge.exception.result;
+package com.yuanfenge.commons.result;
 
 public enum ResultEnum {
     SUCCESS(200, "成功"),

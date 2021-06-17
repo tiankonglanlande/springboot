@@ -39,6 +39,16 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.yuanfenge.exception</groupId>
+            <artifactId>springboot-exception</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yuanfenge.springboot</groupId>
+            <artifactId>springboot-commons</artifactId>
+            <version>1.0</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
