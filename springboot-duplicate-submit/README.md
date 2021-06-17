@@ -19,7 +19,7 @@ https://blog.csdn.net/u013042707/article/details/80669920
 ## 前言：
 根据最新spring boot:2.5.0版本和在《SpringBoot防止重复请求，重复表单提交超级简单的注解实现之四（终极版I）》之上化繁为简抽取更实用的代码，新增超时机制
 ## 防重复提交业务流程图如下
-![avatar](./防重复提交业务流程图.png)
+![avatar](./防重复提交业务流程图.png?raw=true)
 
 ## 1.简化DuplicateSubmitToken.java代码，只留下标记接口，新增超时设置接口
 ```java
@@ -218,7 +218,7 @@ http://localhost:8080/get?num=1
 http://localhost:8080/getParam?num=1
 
 http://localhost:8080/post
-![avatar](./测试效果图.jpg)
+![avatar](./测试效果图.jpg?raw=true)
 
  [源码下载链接](https://github.com/tiankonglanlande/springboot)
  
