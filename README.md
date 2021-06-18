@@ -30,3 +30,4 @@
  | SpringBoot系列16-Spring boot2x快速整合swagger2（Open Api3注解版） | https://www.lskyf.com/post/161 | 
  | SpringBoot系列17-统一异常处理（包含简单的JSR303参数校验） | https://www.lskyf.com/post/211 | 
  | SpringBoot系列18-validation分组校验+自定义参数校验器 | https://www.lskyf.com/post/212 | 
+ | SpringBoot系列19-SpringBoot防止重复请求,重复表单提交超级简单注解的实现之四(终极版II) | https://www.lskyf.com/post/213 | 
