@@ -215,7 +215,7 @@ GET：接收GET请求和访问路径如："/stu"静态方法导入import static 
 ```
 [源码下载链接](https://github.com/tiankonglanlande/springboot)
 
-[原文链接: http://www.lskyf.com/view/37](http://www.lskyf.com/view/37)
+[原文链接: https://www.lskyf.com/post/37](https://www.lskyf.com/post/37)
 
 作者：猿份哥，版权所有，欢迎保留原文链接进行转载：)
 
