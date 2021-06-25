@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: springboot-cloud-stream-rabbitmq-delay-message
+  cloud:
+    stream: # # 1.rabbitmq服务器信息配置
+      binders: # 在此处配置要绑定的rabbitmq的服务信息；
+        defaultRabbit: # 表示定义的名称，用于于binding整合
+          type: rabbit # 消息组件类型
+          environment: # 设置rabbitmq的相关的环境配置
+            spring:
+              rabbitmq:
+                host: 192.168.56.200
+                port: 5672
+                username: yuanfenge
+                password: yuanfenge
+      bindings: # 2.生产者和消费者交换机，分组配置
+        delay-topic-input:
+          destination: delay-topic # 交换机
+          group: your-group # 分组
+        delay-topic-output:
+          destination: delay-topic
+          group: your-group
+# 普通消息配置start
+        general-topic-input:
+          destination: general-topic # 交换机
+          group: general-group # 分组
+        general-topic-output:
+          destination: general-topic # 交换机
+          group: general-group # 分组
+# 普通消息配置end
+
+# 将相关生产者和消费者交换机转换为延时交换机
+      rabbit:
+        bindings:
+          delay-topic-input:
+            consumer:
+              delayed-exchange: true # 设置为延时交换机
+          delay-topic-output:
+            producer:
+              delayed-exchange: true # 设置为延时交换机

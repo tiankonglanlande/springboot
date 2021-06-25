@@ -17,6 +17,7 @@
         <module>springboot-cloud-stream-rabbitmq-common</module>
         <module>springboot-cloud-stream-rabbitmq-listener</module>
         <module>springboot-cloud-stream-rabbitmq-send</module>
+        <module>springboot-cloud-stream-rabbitmq-delay-message</module>
     </modules>
     <packaging>pom</packaging>
 
