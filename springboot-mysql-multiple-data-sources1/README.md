@@ -39,7 +39,7 @@ spring.datasource.test2.driver-class-name=com.mysql.jdbc.Driver
 //表示这个类为一个配置类
 @Configuration
 // 配置mybatis的接口类放的地方
-@MapperScan(basePackages = "com.yuanfenge.demo.dao.test01", sqlSessionFactoryRef = "test1SqlSessionFactory")
+@MapperScan(basePackages = mapper, sqlSessionFactoryRef = "test1SqlSessionFactory")
 public class DataSourceConfig1 {
     // 将这个对象放入Spring容器中
     @Bean(name = "test1DataSource")
@@ -61,7 +61,7 @@ public class DataSourceConfig1 {
         bean.setDataSource(datasource);
         bean.setMapperLocations(
             // 设置mybatis的xml所在位置
-            new PathMatchingResourcePatternResolver().getResources("classpath*:mapper/test01/*.xml"));
+            new PathMatchingResourcePatternResolver().getResources(entiry));
         return bean.getObject();
     }
     @Bean("test1SqlSessionTemplate")
@@ -77,7 +77,7 @@ public class DataSourceConfig1 {
 ```java
 
 @Configuration
-@MapperScan(basePackages = "com.yuanfenge.demo.dao.test02", sqlSessionFactoryRef = "test2SqlSessionFactory")
+@MapperScan(basePackages = mapper, sqlSessionFactoryRef = "test2SqlSessionFactory")
 public class DataSourceConfig2 {
     @Bean(name = "test2DataSource")
     @ConfigurationProperties(prefix = "spring.datasource.test2")

@@ -20,7 +20,8 @@ public class BusinessComponent {
         if (null!=properties){
             List<String> list = properties.list;
             if (!CollectionUtils.isEmpty(list)){
-                result = list.stream().collect(Collectors.joining(properties.delimiter));
+                //result = list.stream().collect(Collectors.joining(properties.delimiter));
+                result = String.join(properties.getDelimiter(), list);
                 return result;
             }
         }

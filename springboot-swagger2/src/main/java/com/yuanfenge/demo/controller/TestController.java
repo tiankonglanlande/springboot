@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
  * @description
  * @createTime 2020 - 8 - 2 14:436
  */
+@Api(tags = {"用户模块"},description = "用户中心")
 @Slf4j
 @RestController
 @RequestMapping("/user")

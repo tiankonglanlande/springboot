@@ -46,7 +46,7 @@ public class FileUploadController {
     }
 
     @RequestMapping("/multiUpload")
-    public String mutiUpload(HttpServletRequest request, Model model) {
+    public String multiUpload(HttpServletRequest request, Model model) {
         List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
         for (int i = 0; i < files.size(); i++) {
             MultipartFile multipartFile = files.get(i);

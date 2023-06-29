@@ -12,7 +12,7 @@ import java.io.IOException;
  * @author 猿份哥
  */
 @WebServlet(urlPatterns = "/my/ayncservlet", asyncSupported = true)
-public class MyAyncServlet extends HttpServlet {
+public class MyAsyncServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

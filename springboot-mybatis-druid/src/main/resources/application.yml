@@ -22,7 +22,7 @@ spring:
 
 mybatis:
   type-handlers-package:  com.yuanfenge.springboot.mybatis.typehandler
-  mapperLocations: classpath:mapper/**.xml
+  mapperLocations: classpath:entiry/**.xml
   typeAliasesPackage:  com.yuanfenge.springboot.mybatis.bean
   # 开启自动映射
   configuration:

@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * @author yuanfenge
+ * @author 猿份哥
  * 方法1：异常处理
  */
 @Slf4j

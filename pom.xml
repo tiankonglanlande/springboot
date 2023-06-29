@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yuanfenge.springboot</groupId>
-    <artifactId>spring boot</artifactId>
+    <artifactId>springboot</artifactId>
     <version>1.1</version>
     <modules>
         <module>springboot-async</module>
@@ -22,7 +22,6 @@
         <module>springboot-quartz</module>
         <module>springboot-redis-pipeline</module>
         <module>springboot-servlet</module>
-        <module>springboot-swagger2</module>
         <module>springboot-thumbnailator-base64</module>
         <module>springboot-upload</module>
         <module>springboot-valid</module>
@@ -33,6 +32,9 @@
         <module>springboot-cloud-stream-rabbitmq\springboot-cloud-stream-rabbitmq-send</module>
         <module>springboot-starter-business-demo</module>
         <module>springboot-commons</module>
+        <module>springboot-redisson</module>
+        <module>springboot-mybatisplus</module>
+        <module>springboot-bloomfilter</module>
 
     </modules>
     <packaging>pom</packaging>
@@ -84,7 +86,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <fork>true</fork>
                     <addResources>true</addResources>
                 </configuration>
             </plugin>

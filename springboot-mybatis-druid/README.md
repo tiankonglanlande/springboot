@@ -103,7 +103,7 @@ spring.datasource.password= root
 #### 启动文件相关配置
 ```java
 @SpringBootApplication
-@MapperScan("com.yuanfenge.springboot.mybatis.dao")
+@MapperScan(mapper)
 public class MybatisDruidApplication {
 
 	public static void main(String[] args) {

@@ -17,7 +17,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 //表示这个类为一个配置类
 @Configuration
 // 配置mybatis的接口类放的地方
-@MapperScan(basePackages = "com.yuanfenge.demo.dao.test01", sqlSessionFactoryRef = "test1SqlSessionFactory")
+@MapperScan(basePackages = "com.yuanfenge.demo.mapper.test01", sqlSessionFactoryRef = "test1SqlSessionFactory")
 public class DataSourceConfig1 {
     // 将这个对象放入Spring容器中
     @Bean(name = "test1DataSource")
@@ -40,7 +40,7 @@ public class DataSourceConfig1 {
         bean.setDataSource(datasource);
         bean.setMapperLocations(
                 // 设置mybatis的xml所在位置
-                new PathMatchingResourcePatternResolver().getResources("classpath*:mapper/test01/*.xml"));
+                new PathMatchingResourcePatternResolver().getResources("classpath*:entiry/test01/*.xml"));
         return bean.getObject();
     }
 

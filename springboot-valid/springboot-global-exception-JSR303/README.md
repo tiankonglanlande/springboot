@@ -13,7 +13,7 @@
 ### 1.2 校验Bean.java实现
 ```java
 /**
- * @author yuanfenge
+ * @author 猿份哥
  * @description
  * @createTime 2019 - 3 - 07 11:54
  */
@@ -34,7 +34,7 @@ public class Bean {
 ## 统一异常处理的ExceptionControllerAdvice.java
 ```java
 /**
- * @author yuanfenge
+ * @author 猿份哥
  * 方法1：异常处理
  */
 @Slf4j

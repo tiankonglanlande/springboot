@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @Configuration
-@MapperScan(basePackages = "com.yuanfenge.demo.dao.test02", sqlSessionFactoryRef = "test2SqlSessionFactory")
+@MapperScan(basePackages = "com.yuanfenge.demo.mapper.test02", sqlSessionFactoryRef = "test2SqlSessionFactory")
 public class DataSourceConfig2 {
     @Bean(name = "test2DataSource")
     @ConfigurationProperties(prefix = "spring.datasource.test2")
@@ -28,7 +28,7 @@ public class DataSourceConfig2 {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(datasource);
         bean.setMapperLocations(
-                new PathMatchingResourcePatternResolver().getResources("classpath*:mapper/test02/*.xml"));
+                new PathMatchingResourcePatternResolver().getResources("classpath*:entiry/test02/*.xml"));
         return bean.getObject();
     }
 

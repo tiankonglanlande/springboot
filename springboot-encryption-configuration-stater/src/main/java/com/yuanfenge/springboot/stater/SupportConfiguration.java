@@ -6,7 +6,7 @@ import com.ulisesbocchio.jasyptspringboot.annotation.EncryptablePropertySources;
 
 
 /**
- * @author yuanfenge
+ * @author 猿份哥
  * @description
  * @createTime 2018 - 11 - 20 11:53
  */

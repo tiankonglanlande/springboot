@@ -27,7 +27,7 @@ public interface UpdateUseGroup {
 ## 分组UserBean.java
 ```java
 /**
- * @author yuanfenge
+ * @author 猿份哥
  * @description
  * @createTime 2019 - 3 - 18 11:54
  *
@@ -88,7 +88,7 @@ public interface CustomUseGroup {
 ```java
 
 /**
- * @author yuanfenge
+ * @author 猿份哥
  * @description 自定义StatusConstraintValidator implements ConstraintValidator<自定义注解类,要校验的参数类型>
  */
 public class StatusConstraintValidator implements ConstraintValidator<Status,Integer> {

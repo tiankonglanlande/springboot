@@ -2,21 +2,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <parent>
-        <groupId>com.yuanfenge.springboot</groupId>
         <artifactId>springboot</artifactId>
+        <groupId>com.yuanfenge.springboot</groupId>
         <version>1.1</version>
-        <relativePath/>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springboot-starter-business-demo</artifactId>
+    <artifactId>springboot-redisson</artifactId>
+    <packaging>pom</packaging>
+    <description>springboot整合redisson</description>
+    <version>1.0</version>
 
     <modules>
-        <module>hello-word-demo</module>
-        <module>springboot-starter-helloWord</module>
+        <module>springboot-redisson-single</module>
+        <module>springboot-redisson-master-slave</module>
     </modules>
-    <packaging>pom</packaging>
+
 </project>
