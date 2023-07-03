@@ -8,9 +8,12 @@ import org.springframework.context.ApplicationEvent;
 @Setter
 @Getter
 @ToString
-public class ContentEvent extends ApplicationEvent {
+public class ContentEvent<T> extends ApplicationEvent {
 
-    private String content;
+    /**
+     * 数据
+     */
+    private T content;
 
     /**
      * Create a new ApplicationEvent.
@@ -21,7 +24,7 @@ public class ContentEvent extends ApplicationEvent {
         super(source);
     }
 
-    public ContentEvent(Object source, String content) {
+    public ContentEvent(Object source, T content) {
         super(source);
         this.content = content;
     }
