@@ -11,10 +11,10 @@ import java.io.Serializable;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Result implements Serializable {
+public class Result<T> implements Serializable {
 
     private Integer code;
     private String message;
-    private Object data;
+    private T data;
 
 }

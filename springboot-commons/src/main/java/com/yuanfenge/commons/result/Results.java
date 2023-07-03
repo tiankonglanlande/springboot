@@ -3,7 +3,7 @@ package com.yuanfenge.commons.result;
 /**
  * 结果工具类
  */
-public class ResultUtils {
+public class Results {
     public static Result success(Object data) {
         return Result.builder()
                 .code(ResultEnum.SUCCESS.getCode())
@@ -40,6 +40,10 @@ public class ResultUtils {
                 .code(code)
                 .message(msg)
                 .build();
+    }
+
+    public static Result fail() {
+        return fail(ResultEnum.FAIL);
     }
 
     public static Result fail(ResultEnum resultEnum) {

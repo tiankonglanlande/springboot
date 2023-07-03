@@ -5,7 +5,9 @@ public enum ResultEnum {
     FAIL(210, "失败"),
     NOT_LOGIN_IN(220, "未登录"),
     DUPLICATE_EXCEPTION(230, "请不要频繁操作！"),
+    PARAMS_EXCEPTION(300,"缺少参数！"),
     EXCEPTION(500, "系统异常，请稍后再试！");
+
 
     private Integer code;
     private String msg;
