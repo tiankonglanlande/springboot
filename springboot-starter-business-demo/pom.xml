@@ -17,6 +17,7 @@
     <modules>
         <module>hello-word-demo</module>
         <module>springboot-starter-helloWord</module>
+        <module>springboot-starter-student</module>
     </modules>
     <packaging>pom</packaging>
 </project>

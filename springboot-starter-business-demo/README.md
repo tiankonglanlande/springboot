@@ -1,20 +1,31 @@
-# 至简starter：一个最简单的starter
+### 功能实现
+使用starter的方式实现Web模块的抽取，本demo实现了Student模块的抽取，其他想要使用的地方。
 
-# starter 是什么？
-待实现。。。
-# 为什么要使用starter？
+### 使用方法
+需要使用的模块引入如下代码
+调用方的 pom.xml文件
+```xml
+        <dependency>
+            <groupId>com.yuanfenge.student</groupId>
+            <artifactId>springboot-starter-student</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+```
+调用方的配置文件
+```properties
+student.id=100
+student.name=yuanfenge
+student.age=20
+```
 
-待实现。。。
-
-## 使用前：
-
-待实现。。。
-
-## 使用后：
-
-待实现。。。
-
-# 如何使用？
-待实现。。。
-# 参数说明
-待实现。。。
+### 说明
+1.此demo注入spring容器是通过META-INF/spring.factories中配置代码
+```factories
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.yuanfenge.student.StudentAutoConfiguration
+```
+2.如果是springboot3.x可以通过创建META-INF/spring/org.springframework.boot.autoconfigure.Autoconfiguration.imports
+然后配置一下代码即可
+```imports
+com.yuanfenge.student.StudentAutoConfiguration
+```

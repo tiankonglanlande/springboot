@@ -6,7 +6,7 @@
 
 # chrome扩展程序让你的浏览器无比强大也许你可以看看
 
-#### 点击访问： http://cj.lskyf.com/
+#### 点击访问： https://cj.lskyf.com/
 
 # 【猿份哥】-SpringBoot系列汇集（如果不方便可以在每个文件下的README中查看）
  | 文章系列                                                                              | 文件位置                        | 原文链接         
