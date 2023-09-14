@@ -1,0 +1,27 @@
+# 使用druid数据源
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      db-type: com.alibaba.druid.pool.DruidDataSource
+  thymeleaf:
+    cache: false
+mybatis-plus:
+  # 支持统配符 * 或者 ; 分割
+  typeEnumsPackage: com.yuanfenge.springboot.mybatisplus.constant
+  configuration:
+    # 打印sql
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

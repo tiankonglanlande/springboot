@@ -25,6 +25,10 @@ public class JasyptSimpleApplicationTests {
         System.out.println("pwd解密后:" + pwd);
     }
 
+    /**
+     * 将原始值加密
+     * 得到加密串
+     */
     @Test
     public void jiami() {
         String username = "tiankonglanlande";

@@ -76,6 +76,11 @@
                 <version>2.2.4.RELEASE</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.yuanfenge.springboot</groupId>
+                <artifactId>springboot-commons</artifactId>
+                <version>1.0</version>
+            </dependency>
         </dependencies>
 
     </dependencyManagement>

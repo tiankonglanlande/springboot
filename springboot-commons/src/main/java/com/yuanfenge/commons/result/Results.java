@@ -4,6 +4,12 @@ package com.yuanfenge.commons.result;
  * 结果工具类
  */
 public class Results {
+    public static Result success() {
+        return Result.builder()
+                .code(ResultEnum.SUCCESS.getCode())
+                .message(ResultEnum.SUCCESS.getMsg())
+                .build();
+    }
     public static Result success(Object data) {
         return Result.builder()
                 .code(ResultEnum.SUCCESS.getCode())
@@ -25,6 +31,10 @@ public class Results {
         return success(resultEnum.getCode(), resultEnum.getMsg());
     }
 
+
+    public static Result fail() {
+        return fail(ResultEnum.FAIL);
+    }
     public static Result fail(String msg) {
         if (null == msg) msg = ResultEnum.FAIL.getMsg();
         return Result.builder()
@@ -40,10 +50,6 @@ public class Results {
                 .code(code)
                 .message(msg)
                 .build();
-    }
-
-    public static Result fail() {
-        return fail(ResultEnum.FAIL);
     }
 
     public static Result fail(ResultEnum resultEnum) {
