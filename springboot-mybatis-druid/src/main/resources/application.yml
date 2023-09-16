@@ -17,13 +17,20 @@ spring:
       poolPreparedStatements: true
       maxOpenPreparedStatements: 20
       db-type: com.alibaba.druid.pool.DruidDataSource
+      # 配置druid监测 访问地址 http://127.0.0.1/8080/druid/
+      stat-view-servlet:
+        allow: 127.0.0.1 # 允许访问的地址，如果allow没有配置或者为空，则允许所有访问
+        login-username: admin # 访问用户名
+        login-password: 123456 # 访问密码
+      web-stat-filter:
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"   # 排除一些不必要的资源
   thymeleaf:
     cache: false
 
 mybatis:
-  type-handlers-package:  com.yuanfenge.springboot.mybatis.typehandler
-  mapperLocations: classpath:entiry/**.xml
-  typeAliasesPackage:  com.yuanfenge.springboot.mybatis.bean
+  type-handlers-package: com.yuanfenge.mybatis.druid.typehandler
+  mapperLocations: classpath:mapper/**.xml
+  typeAliasesPackage:  com.yuanfenge.mybatis.druid.bean
   # 开启自动映射
   configuration:
     map-underscore-to-camel-case: true
