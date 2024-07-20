@@ -38,7 +38,7 @@ public class BusinessApp {
 ```
 
 ### 5.yml文件参数配置（可选）
-配置加载顺序：代码中配置 > yml或property配置 > 默认配置
+配置加载顺序：代码中配置 > yml或property配置 > 初始配置
 
 application.yml
 ```yaml

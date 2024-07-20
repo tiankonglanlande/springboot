@@ -37,7 +37,7 @@ public class RetryAspect {
         Exception exception=null;
         if (method.isAnnotationPresent(Retry.class)){
             Retry annotation = method.getAnnotation(Retry.class);
-            //设置默认值：用户注解配置>yml配置>默认值
+            //设置初始值：用户注解配置 > yml配置 > 初始值
             int maxRetryCount = annotation.maxRetryCount();
             if (maxRetryCount==Retry.DEFAULT_MAX_RETRY_VAL){
                 maxRetryCount= properties.maxRetryCount;
