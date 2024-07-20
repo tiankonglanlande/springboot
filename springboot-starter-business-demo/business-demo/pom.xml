@@ -33,6 +33,12 @@
         </dependency>
 
         <dependency>
+            <groupId>com.yuanfenge</groupId>
+            <artifactId>springboot-starter-retry</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>

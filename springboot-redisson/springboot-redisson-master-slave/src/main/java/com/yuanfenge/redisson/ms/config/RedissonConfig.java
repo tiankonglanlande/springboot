@@ -35,11 +35,20 @@ public class RedissonConfig {
                 .collect(Collectors.toList());
         // 2. Create config object
         Config config = new Config();
+        //主备集群
         MasterSlaveServersConfig masterSlaveConfig = config.useMasterSlaveServers();
+
         masterSlaveConfig.setMasterAddress(nodes.get(0))
                 .addSlaveAddress(nodes.get(1))
                 .addSlaveAddress(nodes.get(2))
+                //.addSlaveAddress( nodes.stream().skip(0L).collect(Collectors.toList()).toArray(new String[0]))
                 .setPassword(redisProperties.getPassword());
+
+        /* cluster集群
+        ClusterServersConfig clusterServersConfig = config.useClusterServers();
+        clusterServersConfig.setNodeAddresses(nodes);
+        clusterServersConfig.setPassword(redisProperties.getPassword());
+        */
 
         //3. 使用json序列化方式
         Codec codec = new JsonJacksonCodec();

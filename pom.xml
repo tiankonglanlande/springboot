@@ -35,6 +35,9 @@
         <module>springboot-redisson</module>
         <module>springboot-mybatisplus</module>
         <module>springboot-bloomfilter</module>
+        <module>springboot3</module>
+        <module>springboot-aop</module>
+        <module>springboot-starter-retry</module>
 
     </modules>
     <packaging>pom</packaging>

@@ -40,7 +40,7 @@ public class MainController {
                 UserDetails userDetails = (UserDetails) principal;
                 String username = userDetails.getUsername();
                 String password = userDetails.getPassword();
-                // TODO 可以获取其他用户信息
+                // TODO 可以获取用户的其他信息
 
 
                 model.addAttribute("userDetails",userDetails);

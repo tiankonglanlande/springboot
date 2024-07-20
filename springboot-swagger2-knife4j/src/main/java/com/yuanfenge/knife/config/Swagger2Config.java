@@ -3,6 +3,7 @@ package com.yuanfenge.knife.config;
 import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -18,10 +19,16 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class Swagger2Config {
 
 
+    @Profile({"dev","test","default"})
+    public boolean swaggerEnable(){
+        return true;
+    }
+
+
     @Bean
     public Docket docket() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .enable(true) //true-打开，false-关闭 如果有不同的环境在配置文件里控制然后将配置文件加载到这里
+                .enable(swaggerEnable()) //true-打开，false-关闭 如果有不同的环境在配置文件里控制然后将配置文件加载到这里
                 .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.yuanfenge.knife.controller"))//swagger文档扫描包

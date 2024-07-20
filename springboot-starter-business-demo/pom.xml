@@ -15,7 +15,7 @@
     <artifactId>springboot-starter-business-demo</artifactId>
 
     <modules>
-        <module>hello-word-demo</module>
+        <module>business-demo</module>
         <module>springboot-starter-helloWord</module>
         <module>springboot-starter-student</module>
     </modules>

@@ -22,4 +22,4 @@ spring:
           destination: CustomerExchange # 要使用的Exchange路由名称
           content-type: application/json # 设置消息类型，本次为json，文本则设置“text/plain”
           producer:
-            group: yuanfenge_group
+            group: yuanfenge_group #持久化消息和避免消息重复消费（同一组名称消费一次，不同组的可以都消费）

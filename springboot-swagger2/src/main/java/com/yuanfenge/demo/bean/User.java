@@ -22,4 +22,9 @@ public class User implements Serializable {
     private String name;
     @ApiParam("年龄")
     private int age;
+
+    public User(String name, int age) {
+        this.name=name;
+        this.age=age;
+    }
 }

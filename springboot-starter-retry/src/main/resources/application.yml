@@ -1,0 +1,8 @@
+yuanfenge:
+  retry:
+    max-retry-count: 1
+    fallback: fallback2
+    time: 100
+    class-names:
+      - java.lang.NullPointerException
+      - java.lang.ArithmeticException

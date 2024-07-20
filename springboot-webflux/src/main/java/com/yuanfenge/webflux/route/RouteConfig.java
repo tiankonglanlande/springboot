@@ -11,7 +11,6 @@ import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
-import java.time.Duration;
 import java.util.ArrayList;
 
 import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
@@ -49,6 +48,8 @@ public class RouteConfig {
         ArrayList<Student> datas = new ArrayList<>();
         datas.add(new Student("zs", 20));
         datas.add(new Student("ls", 22));
+        datas.add(new Student("ww", 28));
+
 
         log.info("初始化数据---完成---");
 
@@ -58,7 +59,7 @@ public class RouteConfig {
                         //包装数据
                 .body(Mono.just(datas), Student.class)
                         //缓存数据10s
-                        .cache(Duration.ofSeconds(10))
+                       // .cache(Duration.ofSeconds(10))
         );
     }
 }

@@ -20,9 +20,12 @@ public class MyAsyncServlet extends HttpServlet {
         asyncContext.start(() -> {
             try {
                 resp.getWriter().print("hello this is MyAyncServlet!");
-                asyncContext.complete();
+                //业务代码。。。。。
             } catch (IOException e) {
                 e.printStackTrace();
+            }finally {
+                //关闭进程返回流信息
+                asyncContext.complete();
             }
 
         });

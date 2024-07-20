@@ -107,6 +107,7 @@ public class RedisLock implements Lock {
                             "return redis.call('del',KEYS[1])  " +
                             "else return 0 " +
                             "end";
+
             Long execute = stringRedisTemplate.execute(new DefaultRedisScript<>(script, Long.class), Arrays.asList(lockName), uuid);
             if (null == execute) {
                 throw new RuntimeException("this lock doesn't exists o(╥﹏╥)o ！");

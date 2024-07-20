@@ -9,7 +9,6 @@ import org.springframework.util.CollectionUtils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 /** 使用RedisTemplate实现
@@ -60,7 +59,7 @@ public class RedisTemplateService extends AbsRedisBatch {
         if (CollectionUtils.isEmpty(keys))
             return keys;
         List<List<String>> partition = Lists.partition(keys, BatchEnum.DEFAULT_SIZE.getCode());
-        partition.stream().parallel().forEach(i -> result.addAll(redisTemplate.opsForValue().multiGet(keys)));
+        partition.stream().parallel().forEach(ks -> result.addAll(redisTemplate.opsForValue().multiGet(ks)));
         return result;
     }
 

@@ -1,8 +1,22 @@
+
 spring:
-  application:
-    name: springboot-redisson-ms
   redis:
-    cluster:
-      nodes: 192.168.56.200:6379,192.168.56.200:6380,192.168.56.200:6381 # 多个使用逗号分隔
+    sentinel:
+      master: mymaster #指定sentinel master的名称
+      nodes: #指定redis-sentinel集群信息
+        - 192.168.56.101:26379
+        - 192.168.56.101:26380
+        - 192.168.56.101:26381
     password: yuanfenge@redis
     database: 0
+# redis-cluster 集群
+#spring:
+#  redis:
+#    cluster:
+#      master: mymaster #指定sentinel master的名称
+#      nodes: #指定redis-sentinel集群信息
+#        - 192.168.56.101:26379
+#        - 192.168.56.101:26380
+#        - 192.168.56.101:26381
+#    password: yuanfenge@redis
+#    database: 0
