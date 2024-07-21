@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Import;
  * @date: 2024/7/20
  **/
 @Configuration
-@Import({RetryAspect.class,RetryAspect.class, RetryProperties.class})
+@Import({RetryAspect.class, RetryProperties.class})
 public class RetryAutoConfiguration {
 
 }
