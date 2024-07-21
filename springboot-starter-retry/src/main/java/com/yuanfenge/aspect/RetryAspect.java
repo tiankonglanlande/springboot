@@ -71,7 +71,7 @@ public class RetryAspect {
                 } catch (Exception e) {
                     //e.printStackTrace();
                     exception=e;
-                    //抛出的异常不再指定的异常里则不进行重试
+                    //抛出的异常不在指定的异常里则不进行重试
                     if (!containsException(exceptions,exception)){
                         log.info("不再配置的异常内终止重试！");
                         break;
@@ -112,14 +112,14 @@ public class RetryAspect {
         try {
             Method fallbackMethod = target.getClass().getDeclaredMethod(fallbackName);
             fallbackMethod.setAccessible(true);
-            fallbackMethod.invoke(target);
+            Object invoke = fallbackMethod.invoke(target);
+            return invoke;
         } catch (Exception e) {
             //throw new RuntimeException(e);
             log.error("没有找到对应的"+fallbackName+"方法，调用默认的defaultFallback");
             //没有找到相应的fallback则调用默认的defaultFallback方法
             return defaultFallback();
         }
-        return null;
     }
 
     private boolean containsException(Class<? extends Exception>[] exceptions, Exception e) {

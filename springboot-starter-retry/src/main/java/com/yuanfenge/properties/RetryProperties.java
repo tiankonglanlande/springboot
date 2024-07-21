@@ -44,6 +44,7 @@ public class RetryProperties {
                 classes[i] = Class.forName(classNames.get(i));
             } catch (ClassNotFoundException e) {
                 // Handle exception
+                e.printStackTrace();
             }
         }
         return classes;
